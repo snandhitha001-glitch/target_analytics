@@ -94,7 +94,9 @@ FROM (
 ) t
 GROUP BY customer_type;
 
--- Amount spent by customer
+-- Customer lifetime value
+-- What is the total revenue generated per customer?
+-- Total Amount spent per customer
 SELECT c.customer_unique_id, COUNT(DISTINCT o.order_id) AS no_of_orders, ROUND(SUM(order_total), 2) AS amount_spent
 FROM customers c
 LEFT JOIN orders_clean o
