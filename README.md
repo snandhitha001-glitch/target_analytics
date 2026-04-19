@@ -1,4 +1,4 @@
-# 🛒 Decoding Target — An End-to-End SQL Analysis of E-Commerce Operations
+# 🛒 Decoding Target — SQL Analysis of E-Commerce Operations
 
 > *What does it actually look like when millions of people shop online — and what can the data tell us about how to serve them better?*
 
@@ -189,22 +189,6 @@ This produces a **CLV curve per acquisition cohort** — revealing not just tota
 
 - **Database:** MySQL 8+
 - **SQL Features:** CTEs, Window Functions, Views, CASE expressions, DATEDIFF, PERIOD_DIFF, DATE_FORMAT, correlated subqueries
-
----
-
-## Getting Started
-
-```bash
-# Step 1: Import the four CSVs into MySQL as:
-#   customers, orders, order_items, payments
-
-# Step 2: Execute scripts in sequence
-source sql_file/01_Data_Cleaning.sql;
-source sql_file/02_Exploratory_Data_Analysis.sql;
-source sql_file/03_Advance_Analysis.sql;
-```
-
-Query outputs are structured for direct consumption by BI tools (Tableau, Power BI, Metabase).
 
 ---
 
